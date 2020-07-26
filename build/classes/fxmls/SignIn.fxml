@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="VBox" alignment="CENTER_LEFT" layoutX="10.0" layoutY="19.5" prefHeight="470.0" prefWidth="500.0" style="-fx-background-radius: 50;" styleClass="white-pane" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignInController">
+    <children>
+        <Label text="Sign In" textFill="#3c5088">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+            <VBox.margin>
+                <Insets left="20.0" right="15.0" top="30.0" />
+            </VBox.margin>
+        </Label>
+        <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="263.0" prefHeight="45.0" prefWidth="200.0">
+            <VBox.margin>
+                <Insets left="15.0" right="15.0" top="30.0" />
+            </VBox.margin>
+            <children>
+                <FontAwesomeIcon fill="#405aa8bc" iconName="ENVELOPE" size="2em" />
+                <JFXTextField fx:id="tf_email" labelFloat="true" prefHeight="51.0" prefWidth="430.0" promptText="E-Mail">
+                    <HBox.margin>
+                        <Insets left="15.0" />
+                    </HBox.margin>
+                    <unFocusColor>
+                        <LinearGradient endX="0.6941747572815533" endY="1.0" startY="0.6407766990291262">
+                            <stops>
+                                <Stop color="#3c5088" />
+                                <Stop color="#4cbf22" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </unFocusColor>
+                    <focusColor>
+                        <LinearGradient endX="1.0" endY="0.5145631067961165" startY="0.47572815533980584">
+                            <stops>
+                                <Stop color="#3c5088" />
+                                <Stop color="#3c5088" offset="0.21014492753623187" />
+                                <Stop color="#4cbf22" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </focusColor>
+                </JFXTextField>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="263.0" prefHeight="45.0" prefWidth="200.0">
+            <VBox.margin>
+                <Insets left="15.0" right="15.0" top="30.0" />
+            </VBox.margin>
+            <children>
+                <FontAwesomeIcon fill="#405aa8ba" iconName="KEY" size="2em" />
+                <JFXPasswordField fx:id="tf_password" labelFloat="true" prefHeight="70.0" prefWidth="430.0" promptText="Password">
+                    <HBox.margin>
+                        <Insets left="15.0" />
+                    </HBox.margin>
+                    <unFocusColor>
+                        <LinearGradient endX="0.6941747572815533" endY="1.0" startY="0.6407766990291262">
+                            <stops>
+                                <Stop color="#3c5088" />
+                                <Stop color="#4cbf22" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </unFocusColor>
+                    <focusColor>
+                        <LinearGradient endX="1.0" endY="0.5145631067961165" startY="0.47572815533980584">
+                            <stops>
+                                <Stop color="#3c5088" />
+                                <Stop color="#3c5088" offset="0.21014492753623187" />
+                                <Stop color="#4cbf22" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </focusColor>
+                </JFXPasswordField>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="285.0" prefHeight="45.0" prefWidth="200.0">
+            <VBox.margin>
+                <Insets left="15.0" right="15.0" top="30.0" />
+            </VBox.margin>
+            <children>
+                <Label fx:id="lbl_error" prefHeight="21.0" prefWidth="350.0" textAlignment="CENTER" textFill="#b92121" />
+                <Button fx:id="b_singin" mnemonicParsing="false" onAction="#handleSingIn" prefHeight="44.0" prefWidth="91.0" styleClass="pink-btn" text="Sign In" />
+            </children>
+        </HBox>
+    </children>
+</VBox>

@@ -1,0 +1,230 @@
+.parent{
+    -fx-background-color:transparent;
+}
+.pane{
+    -fx-background-color:#333333;
+}
+.trans-btn-white-border{
+    -fx-background-color:#F78C7B;
+    -fx-background-radius:5px;
+    -fx-border-color:#fff;
+    -fx-border-radius:5px;
+    -fx-border-width:1px;
+}
+.trans-btn-white-border:hover
+{
+    -fx-background-color:#F78C7B;
+    -fx-background-radius:5px;
+    -fx-border-color:#fff;
+    -fx-border-radius:5px;
+    -fx-border-width:3px; 
+}
+
+.trans-btn-white-border-minimize{
+    -fx-background-color:#5976C9;
+    -fx-background-radius:5px;
+    -fx-border-color:#fff;
+    -fx-border-radius:5px;
+    -fx-border-width:1px;
+}
+.trans-btn-white-border-minimize:hover
+{
+    -fx-background-color:#5976C9;
+    -fx-background-radius:5px;
+    -fx-border-color:#fff;
+    -fx-border-radius:5px;
+    -fx-border-width:3px; 
+}
+
+.trans-btn-white-border1{
+    -fx-background-color:transparent;
+    -fx-background-radius:5px;
+    -fx-border-color:#0E385F;
+    -fx-border-radius:5px;
+    -fx-border-width:2px;
+    -fx-text-fill:#0E385F;
+}
+.trans-btn-white-border1:hover
+{
+    -fx-background-color:#5976C9;
+    -fx-background-radius:5px;
+    -fx-border-color:#fff;
+    -fx-border-radius:5px;
+    -fx-border-width:1px;
+    
+}
+
+.white-pane{
+    -fx-background-color:#FFFFFF;
+}
+.tf_box{
+    -fx-background-color:transparent;
+    -fx-border-color:#DEDEE4;
+    -fx-border-width:0px 0px 1px 0px;    
+}
+.tf{
+    -fx-background-color:transparent;
+    -fx-text-fill: #3C5088;
+    -fx-prompt-text-fill: #5976C9;
+
+}
+.tf:focused
+{
+    -fx-border-color:#3C5088;
+    -fx-border-width:2; 
+    -fx-text-fill:#3C5088;
+}
+.pink-btn{
+    -fx-background-color:#3C5088;
+    -fx-background-radius:5px;
+    -fx-text-fill:#FFFFFF;
+}
+
+.pink-btn:hover{
+    -fx-background-color:#5976C9;
+    -fx-background-radius:5px;
+    -fx-text-fill:#333333;
+}
+
+.pink-btn1{
+    -fx-background-color:#4cbf22;
+    -fx-background-radius:5px;
+    -fx-text-fill:#FFFFFF;
+}
+
+.pink-btn1:hover{
+    -fx-background-color:#5976C9;
+    -fx-background-radius:5px;
+    -fx-text-fill:#333333;
+}
+
+.app-btn{
+    -fx-background-color:  #F78C7B;
+    -fx-background-radius:5px;
+    -fx-text-fill:#FFFFFF;
+}
+.app-btn:hover{
+    -fx-background-color: linear-gradient(from 0px 50px to 0px 100px, #F78C7B, #A84545 );
+}
+.app-btn:pressed{
+    -fx-background-color:#F78C7B;
+    -fx-background-radius:5px;
+}
+.app-btn-exit{
+    -fx-background-color:  #F78C7B;
+    -fx-background-radius:5px;
+    -fx-text-fill:#FFFFFF;
+}
+.app-btn-exit:hover{
+    -fx-background-color: linear-gradient(from 0px 50px to 0px 100px, #F78C7B, #A84545 );
+}
+.app-btn-exit:pressed{
+    -fx-background-color:#F78C7B;
+    -fx-background-radius:5px;
+}
+.app-btn1{
+    -fx-background-color: #5f6769;
+    -fx-background-radius:5px;
+    -fx-text-fill:#FFFFFF;
+}
+.app-btn1:hover{
+    -fx-background-color: linear-gradient(from 0px 50px to 0px 100px, #5f6769, #3A3F40);
+}
+.app-btn1:pressed{
+    -fx-background-color:#0D7A7D;
+    -fx-background-radius:5px;
+}
+.app-btn2{
+    -fx-background-color: #719192;
+    -fx-background-radius:5px;
+    -fx-text-fill:#FFFFFF;
+}
+.app-btn2:hover{
+    -fx-background-color: linear-gradient(from 0px 60px to 0px 100px, #719192, #516869 );
+}
+.app-btn2:pressed{
+    -fx-background-color:#0D7A7D;
+    -fx-background-radius:5px;
+}
+.app-btn3{
+    -fx-background-color:  #a78e29;
+    -fx-background-radius:5px;
+    -fx-text-fill:#FFFFFF;
+}
+.app-btn3:hover{
+    -fx-background-color: linear-gradient(from 0px 60px to 0px 100px, #a78e29, #BD7C2E );
+}
+.app-btn3:pressed{
+    -fx-background-color:#0D7A7D;
+    -fx-background-radius:5px;
+}
+.app-btn4{
+    -fx-background-radius:5px;
+    -fx-text-fill:#FFFFFF;
+}
+.app-btn4:hover{
+    -fx-background-color:#5976C9;
+    -fx-background-radius:5px;
+}
+.app-btn4:pressed{
+    -fx-background-color:#0D7A7D;
+    -fx-background-radius:5px;
+}
+
+.forgot{
+    
+}
+.forgot:hover{
+    -fx-border-color:#3C5088;
+    -fx-border-width:2; 
+    -fx-text-fill:#3C5088;
+}
+
+.linear-grad1
+{  
+    -fx-background-color: linear-gradient(from 50% 50% to 80% 80%, #E5E8F2, #F4F5FA);
+}
+
+.linear-grad-to-bottom{
+    -fx-background-color: linear-gradient(to bottom, #ff7f50, #6a5acd);
+}
+
+.linear-grad-to-top{
+    -fx-background-color: linear-gradient(to top, #ff7f50, #6a5acd);
+}
+
+.linear11{
+    -fx-border-color: linear-gradient(from 30% 30% to 70% 70%, #3C5088,#4cbf22 );
+    -fx-border-width: 3;
+}
+.linear12{
+    -fx-border-color: linear-gradient(from 30% 30% to 70% 70%, #3C5088,#4cbf22 );
+    -fx-border-radius: 50;
+    -fx-border-width: 3;
+}
+
+.linear-grad-to-right{
+    -fx-background-color: linear-gradient(to right, #ff7f50, #6a5acd);
+}
+
+.linear-grad-to-bottom-left{
+    -fx-background-color: linear-gradient(to bottom left, #ff7f50, #b063c5);
+}
+
+.linear-grad-to-bottom-right{
+    -fx-background-color: linear-gradient(to bottom right, #ff7f50, #6a5acd);
+}
+
+.linear-grad-to-top-left{
+    -fx-background-color: linear-gradient(to top left, #ff7f50, #6a5acd);
+}
+
+.linear-grad-to-top-right{
+    -fx-background-color: linear-gradient(to top right, #ff7f50, #6a5acd);
+}
+
+.wrong-credentials
+{
+    -jfx-unfocus-color: #ef5350;
+    -jfx-focus-color: #ef5350;
+}

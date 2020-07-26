@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="777.0" prefWidth="1250.0" style="-fx-background-color: transparent;" styleClass="parent" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ManagerPageController">
+    <children>
+        <AnchorPane layoutY="57.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1250.0" style="-fx-background-color: #fff;" styleClass="linear11">
+            <children>
+                <ImageView fitHeight="222.0" fitWidth="287.0" layoutX="46.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../stayla/logo.png" />
+                    </image>
+                </ImageView>
+                <Button alignment="CENTER" layoutX="22.0" layoutY="321.0" mnemonicParsing="false" onAction="#handleMyProfile" prefHeight="106.0" prefWidth="293.0" styleClass="app-btn1" stylesheets="@stylesheet.css" text="   My Profile">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button alignment="CENTER" layoutX="22.0" layoutY="454.0" mnemonicParsing="false" onAction="#handlelogout" prefHeight="106.0" prefWidth="293.0" styleClass="app-btn2" stylesheets="@stylesheet.css" text="    Log Out">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button alignment="CENTER" layoutX="22.0" layoutY="581.0" mnemonicParsing="false" onAction="#handleSss" prefHeight="106.0" prefWidth="293.0" styleClass="app-btn" stylesheets="@stylesheet.css" text="SSS">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button alignment="CENTER" layoutX="648.0" layoutY="491.0" mnemonicParsing="false" onAction="#handlesearch" prefHeight="106.0" prefWidth="277.0" styleClass="app-btn3" stylesheets="@stylesheet.css" text="      Manage Trains">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Separator layoutX="334.0" layoutY="14.0" orientation="VERTICAL" prefHeight="699.0" prefWidth="0.0" />
+                <ImageView fx:id="view" fitHeight="280.0" fitWidth="860.0" layoutX="367.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="23.0" />
+                <ToolBar layoutX="720.0" layoutY="301.0" prefHeight="40.0" prefWidth="132.0" style="-fx-background-color: #fff;">
+                    <items>
+                        <JFXRadioButton fx:id="radio1" onAction="#handleview" selected="true" text=" ">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="group1" />
+                            </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="radio2" onAction="#handleview" text=" " toggleGroup="$group1" />
+                        <JFXRadioButton fx:id="radio3" onAction="#handleview" text=" " toggleGroup="$group1" />
+                    </items>
+                </ToolBar>
+                <FontAwesomeIcon fill="WHITE" iconName="QUESTION_CIRCLE" layoutX="79.0" layoutY="644.0" size="2em" />
+                <FontAwesomeIcon fill="WHITE" iconName="USER" layoutX="80.0" layoutY="384.0" size="2em" />
+                <FontAwesomeIcon fill="WHITE" iconName="COG" layoutX="678.0" layoutY="557.0" size="2.5em" />
+                <FontAwesomeIcon fill="WHITE" iconName="LOCK" layoutX="82.0" layoutY="517.0" size="2em" />
+            </children>
+        </AnchorPane>
+        <Button fx:id="exit" layoutX="1194.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleexit" prefHeight="33.0" prefWidth="34.0" styleClass="trans-btn-white-border" stylesheets="@stylesheet.css">
+            <graphic>
+                <FontAwesomeIcon fill="#ffffffad" iconName="TIMES_CIRCLE" size="1.5em" />
+            </graphic>
+        </Button>
+        <Button layoutX="1131.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleminimize" prefHeight="33.0" prefWidth="34.0" styleClass="trans-btn-white-border-minimize">
+            <graphic>
+                <FontAwesomeIcon fill="#ffffffad" iconName="MINUS_SQUARE" size="1.5em" />
+            </graphic>
+        </Button>
+    </children>
+</AnchorPane>

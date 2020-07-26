@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import de.jensd.fx.glyphs.weathericons.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.QuadCurve?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="906.0" prefWidth="708.0" style="-fx-background-color: #ffff;" styleClass="linear11" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SeatsController">
+    <children>
+        <Line endX="100.0" layoutX="50.0" layoutY="139.0" startX="100.0" startY="733.0" stroke="#214017" strokeWidth="3.0" />
+        <Line endX="-398.5" endY="643.5" layoutX="550.0" layoutY="231.0" startX="77.5" startY="643.5" stroke="#214017" strokeWidth="3.0" />
+        <QuadCurve controlX="182.0" controlY="-180.0" endX="430.5" endY="0.5" fill="WHITE" layoutX="199.0" layoutY="136.0" startX="-50.5" startY="1.5" stroke="#254610" strokeType="INSIDE" strokeWidth="3.0" />
+      <Button layoutX="630.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleclose" prefHeight="50.0" prefWidth="64.0" styleClass="app-btn" stylesheets="@stylesheet.css">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" iconName="TIMES_CIRCLE" size="2em" />
+         </graphic></Button>
+      <Button layoutX="21.0" layoutY="830.0" mnemonicParsing="false" onAction="#handlenext" prefHeight="50.0" prefWidth="64.0" styleClass="pink-btn" stylesheets="@stylesheet.css">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphStyleClass="" iconName="CREDIT_CARD" size="2em" />
+         </graphic></Button>
+      <ImageView fitHeight="74.0" fitWidth="64.0" layoutX="27.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/armchair.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="74.0" fitWidth="64.0" layoutX="27.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/armchair1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="74.0" fitWidth="64.0" layoutX="27.0" layoutY="562.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/armchair2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="35.0" layoutY="400.0" text="Avaible" />
+      <Label layoutX="22.0" layoutY="510.0" text="Unavailable" />
+      <Label layoutX="32.0" layoutY="626.0" text="Selected" />
+      <VBox fx:id="pnseats1" layoutX="149.0" layoutY="220.0" prefHeight="655.0" prefWidth="111.0" spacing="8.0" />
+      <VBox fx:id="pnseats2" layoutX="260.0" layoutY="220.0" prefHeight="655.0" prefWidth="111.0" spacing="8.0" />
+      <VBox fx:id="pnseats4" layoutX="518.0" layoutY="220.0" prefHeight="655.0" prefWidth="111.0" spacing="8.0" />
+      <VBox fx:id="pnseats3" layoutX="407.0" layoutY="220.0" prefHeight="655.0" prefWidth="111.0" spacing="8.0" />
+      <Line endX="100.0" layoutX="530.0" layoutY="230.0" startX="100.0" startY="643.0" stroke="#214017" strokeWidth="3.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#363434" height="101.0" layoutX="638.0" layoutY="220.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+      <Line endX="10.0" layoutX="629.0" layoutY="149.0" rotate="90.0" startX="-10.0" stroke="#214017" strokeWidth="3.0" />
+      <Line endX="-398.5" endY="643.5" layoutX="550.0" layoutY="-483.0" startX="77.5" startY="643.5" stroke="#214017" strokeWidth="3.0" />
+      <Label fx:id="lbl_train" layoutX="42.0" layoutY="29.0" text="Label" visible="false" />
+      <ImageView fitHeight="50.0" fitWidth="64.0" layoutX="354.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/Adsız.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

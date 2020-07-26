@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="780.0" prefWidth="1250.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmls.SearchTrainsController">
+    <children>
+        <AnchorPane id="AnchorPane1" layoutY="60" prefHeight="720.0" prefWidth="1250.0" style="-fx-background-color: #ffff;" styleClass="linear11" stylesheets="@stylesheet.css">
+            <children>
+                <Button fx:id="b_return" layoutX="24.0" layoutY="26.0" mnemonicParsing="false" onAction="#handleclose" prefHeight="59.0" prefWidth="210.0" styleClass="app-btn3" stylesheets="@stylesheet.css" text="Back to HomePage" wrapText="true">
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" iconName="TIMES_CIRCLE" size="3em" wrappingWidth="44.0" />
+                    </graphic>
+                </Button>
+                <Pane layoutX="159.0" layoutY="75.0" prefHeight="32.0" prefWidth="928.0">
+                    <children>
+                        <Label layoutX="21.0" layoutY="30.0" text="Departure Time">
+                            <font>
+                                <Font size="21.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="236.0" layoutY="30.0" text="Arrival Time">
+                            <font>
+                                <Font size="21.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="464.0" layoutY="30.0" text="Date">
+                            <font>
+                                <Font size="21.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="637.0" layoutY="30.0" text="Cost">
+                            <font>
+                                <Font size="21.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <ScrollPane layoutX="35.0" layoutY="150.0" prefHeight="548.0" prefWidth="1131.0">
+                    <content>
+                        <VBox fx:id="pntrains" prefHeight="547.0" prefWidth="1160.0" style="-fx-background-color: #ffff;" />
+                    </content>
+                </ScrollPane>
+                <Label fx:id="lbl_departure" layoutX="398.0" layoutY="48.0" text="asd">
+                    <font>
+                        <Font name="Bell MT" size="28.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lbl_arrival" layoutX="849.0" layoutY="50.0" text="Label">
+                    <font>
+                        <Font name="Bell MT" size="28.0" />
+                    </font>
+                </Label>
+                <Label layoutX="348.0" layoutY="19.0" text="Departure City">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="819.0" layoutY="18.0" text="Arrival City">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+      <Button layoutX="1105.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleminimize" prefHeight="33.0" prefWidth="34.0" styleClass="trans-btn-white-border-minimize" stylesheets="@stylesheet.css">
+         <graphic>
+            <FontAwesomeIcon fill="#ffffffad" iconName="MINUS_SQUARE" size="1.5em" />
+         </graphic>
+      </Button>
+      <Button fx:id="exit" layoutX="1168.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleexit" prefHeight="33.0" prefWidth="34.0" styleClass="trans-btn-white-border" stylesheets="@stylesheet.css">
+         <graphic>
+            <FontAwesomeIcon fill="#ffffffad" iconName="TIMES_CIRCLE" size="1.5em" />
+         </graphic>
+      </Button>
+    </children>
+</AnchorPane>

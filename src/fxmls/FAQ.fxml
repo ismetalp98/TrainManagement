@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FAQController">
+   <left>
+      <VBox prefHeight="408.0" prefWidth="122.0" style="-fx-background-color: GRAY;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onlineTicket" prefHeight="135.0" prefWidth="122.0" styleClass="app-btn3" stylesheets="@stylesheet.css" text="Online Ticket" />
+            <Button mnemonicParsing="false" onAction="#ticketChange" prefHeight="135.0" prefWidth="122.0" styleClass="app-btn2" stylesheets="@stylesheet.css" text="Ticket Change" />
+            <Button mnemonicParsing="false" onAction="#trainFeatures" prefHeight="135.0" prefWidth="122.0" styleClass="app-btn1" stylesheets="@stylesheet.css" text="Train Features" />
+            <Button mnemonicParsing="false" onAction="#yourQuestions" prefHeight="130.0" prefWidth="122.0" styleClass="app-btn" stylesheets="@stylesheet.css" text="Your Questions" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="anchorPane" prefHeight="535.0" prefWidth="629.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="81.0" layoutY="86.0" prefHeight="364.0" prefWidth="452.0" text="Hello !You can find frequently asked questions in this page. Please feel free to ask your questions from Your Questions button." wrapText="true">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

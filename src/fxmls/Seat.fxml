@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handlebutton" prefHeight="98.0" prefWidth="117.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="view" fitHeight="89.0" fitWidth="89.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/armchair.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="num" alignment="CENTER" layoutX="47.0" layoutY="39.0" prefHeight="24.0" prefWidth="23.0" text="0" textAlignment="RIGHT" />
+   </children>
+</Pane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="1019.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MyProfileController">
+   <children>
+      <Pane layoutY="22.0" prefHeight="128.0" prefWidth="1019.0" style="-fx-background-color: #2c7873; -fx-background-radius: 2;">
+         <children>
+            <Label layoutX="107.0" layoutY="23.0" prefHeight="83.0" prefWidth="232.0" text="           MY PROFILE" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="656.0" layoutY="23.0" prefHeight="83.0" prefWidth="232.0" text="           MY TICKETS" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label contentDisplay="CENTER" layoutX="46.0" layoutY="212.0" prefHeight="36.0" prefWidth="70.0" text="Name" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="46.0" layoutY="298.0" prefHeight="36.0" prefWidth="124.0" text="Last Name" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="387.0" prefHeight="36.0" prefWidth="124.0" text="E-mail">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_name" layoutX="183.0" layoutY="214.0" prefHeight="32.0" prefWidth="226.0" style="-fx-background-color: #fff;" text="Label" wrapText="true">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label fx:id="lbl_lastName" layoutX="183.0" layoutY="300.0" prefHeight="32.0" prefWidth="226.0" style="-fx-background-color: #fff;" text="Label" wrapText="true">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label fx:id="lbl_eMail" layoutX="183.0" layoutY="389.0" prefHeight="32.0" prefWidth="277.0" text="Label" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Separator layoutX="46.0" layoutY="248.0" prefHeight="3.0" prefWidth="350.0" />
+      <Separator layoutX="46.0" layoutY="331.0" prefHeight="3.0" prefWidth="350.0" />
+      <Separator layoutX="46.0" layoutY="420.0" prefHeight="3.0" prefWidth="350.0" />
+      <TableView fx:id="tableView" layoutX="489.0" layoutY="195.0" prefHeight="258.0" prefWidth="508.0">
+        <columns>
+          <TableColumn fx:id="seatscol" prefWidth="66.0" text="Seats" />
+          <TableColumn fx:id="dpcol" prefWidth="79.0" text="Departure" />
+            <TableColumn fx:id="arcol" prefWidth="84.0" text="Arrival" />
+            <TableColumn fx:id="datecol" prefWidth="114.0" text="Date" />
+            <TableColumn fx:id="traincol" prefWidth="82.0" text="Train No" />
+            <TableColumn fx:id="conditioncol" prefWidth="82.0" text="Condition" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

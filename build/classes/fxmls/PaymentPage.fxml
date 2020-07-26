@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="974.0" maxWidth="708.0" minHeight="906.0" minWidth="708.0" prefHeight="974.0" prefWidth="708.0" style="-fx-background-color: #ffff;" styleClass="linear11" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PaymentPageController">
+    <children>
+        <Pane layoutX="-161.0" layoutY="326.0" opacity="0.86" prefHeight="200.0" prefWidth="275.0" rotate="45.0" style="-fx-background-color: #3C5088; -fx-background-radius: 50;" />
+        <Pane layoutX="524.0" layoutY="868.0" maxHeight="200.0" maxWidth="275.0" minHeight="200.0" minWidth="275.0" opacity="0.86" prefHeight="200.0" prefWidth="275.0" rotate="-14.0" style="-fx-background-color: #4cbf22; -fx-background-radius: 50;">
+         <children>
+              <Button layoutX="85.0" layoutY="28.0" mnemonicParsing="false" onAction="#handlePay" prefHeight="50.0" prefWidth="88.0" rotate="14.7" styleClass="pink-btn" stylesheets="@stylesheet.css" text="Buy">
+                  <graphic>
+                      <FontAwesomeIcon fill="WHITE" glyphStyleClass="" iconName="CREDIT_CARD" size="2em" />
+                  </graphic>
+              </Button>
+         </children></Pane>
+        <Button layoutX="522.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleclose" prefHeight="50.0" prefWidth="166.0" styleClass="app-btn" stylesheets="@stylesheet.css" text="Return Train List">
+            <graphic>
+                <FontAwesomeIcon fill="WHITE" iconName="TIMES_CIRCLE" size="2em" />
+            </graphic>
+        </Button>
+        <JFXTextField fx:id="cardNumber" labelFloat="true" layoutX="193.0" layoutY="378.0" onKeyReleased="#handlecardnum" prefHeight="31.0" prefWidth="329.0" promptText="Card Number">
+            <unFocusColor>
+                <LinearGradient endX="0.6941747572815533" endY="1.0" startY="0.6407766990291262">
+                    <stops>
+                        <Stop color="#3c5088" />
+                        <Stop color="#4cbf22" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </unFocusColor>
+            <focusColor>
+                <LinearGradient endX="1.0" endY="0.5145631067961165" startY="0.47572815533980584">
+                    <stops>
+                        <Stop color="#3c5088" />
+                        <Stop color="#3c5088" offset="0.21014492753623187" />
+                        <Stop color="#4cbf22" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </focusColor>
+        </JFXTextField>
+        <Text layoutX="194.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valid THRU" underline="true" />
+        <JFXTextArea fx:id="notes" labelFloat="true" layoutX="144.0" layoutY="729.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="135.0" prefWidth="428.0" promptText="                           You can add your note here" style="-fx-background-color: #45454510;">
+            <unFocusColor>
+                <LinearGradient endX="0.5436893203883495" endY="1.0" startX="0.2961165048543689" startY="1.0">
+                    <stops>
+                        <Stop color="#3c5088" />
+                        <Stop color="#4cbf22" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </unFocusColor>
+            <focusColor>
+                <LinearGradient endX="1.0" endY="0.529126213592233" startX="1.0" startY="0.6019417475728155">
+                    <stops>
+                        <Stop color="#3c5088" />
+                        <Stop color="#3c5088" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </focusColor>
+        </JFXTextArea>
+        <Label layoutX="351.0" layoutY="502.0" text="/">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <JFXComboBox fx:id="comboMonth" labelFloat="true" layoutX="191.0" layoutY="505.0" onAction="#handlevalidm" prefHeight="31.0" prefWidth="137.0" promptText="Month">
+            <unFocusColor>
+                <LinearGradient endX="1.0" endY="0.30097087378640774" startY="0.616504854368932">
+                    <stops>
+                        <Stop color="#3c5088" />
+                        <Stop color="#4cbf22" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.1262135922330097" startY="1.0">
+               <stops>
+                  <Stop color="#3c5088" />
+                  <Stop color="#26c32b" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+        </JFXComboBox>
+        <JFXComboBox fx:id="comboYear" labelFloat="true" layoutX="384.0" layoutY="505.0" onAction="#handlevalidy" prefHeight="31.0" prefWidth="137.0" promptText="Year">
+            <unFocusColor>
+                <LinearGradient endX="1.0" endY="0.49514563106796117" startY="0.43689320388349506">
+                    <stops>
+                        <Stop color="#3c5088" />
+                        <Stop color="#3c5088" offset="0.12318840579710146" />
+                  <Stop color="#29bc2e" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </unFocusColor>
+        </JFXComboBox>
+        <JFXTextField fx:id="cvcNumber" labelFloat="true" layoutX="192.0" layoutY="586.0" onKeyReleased="#handlecvcnum" prefHeight="31.0" prefWidth="329.0" promptText="CVC">
+            <focusColor>
+                <LinearGradient endX="1.0" endY="0.5145631067961165" startY="0.47572815533980584">
+                    <stops>
+                        <Stop color="#3c5088" />
+                        <Stop color="#3c5088" offset="0.21014492753623187" />
+                        <Stop color="#4cbf22" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </focusColor>
+            <unFocusColor>
+                <LinearGradient endX="0.8300970873786406" endY="1.0" startX="0.24757281553398058" startY="1.0">
+                    <stops>
+                        <Stop color="#3c5088" />
+                        <Stop color="#3c5088" offset="0.007246376811594203" />
+                  <Stop color="#37a83b" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </unFocusColor>
+        </JFXTextField>
+      <JFXComboBox fx:id="comboMeal" labelFloat="true" layoutX="191.0" layoutY="663.0" onAction="#handleMeal" prefHeight="31.0" prefWidth="329.0" promptText="Meal">
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.1262135922330097" startY="1.0">
+               <stops>
+                  <Stop color="#3c5088" />
+                  <Stop color="#26c32b" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="0.30097087378640774" startY="0.616504854368932">
+               <stops>
+                  <Stop color="#3c5088" />
+                  <Stop color="#4cbf22" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXComboBox>
+      <Label fx:id="money" alignment="CENTER" layoutX="565.0" layoutY="368.0" prefHeight="67.0" prefWidth="107.0" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Pane layoutX="172.0" layoutY="78.0" prefHeight="236.0" prefWidth="372.0">
+         <children>
+            <ImageView fitHeight="235.0" fitWidth="372.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../stayla/KrediKartıImage.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="imagecvc" layoutX="203.0" layoutY="102.0" prefHeight="27.0" prefWidth="75.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="pnfront" layoutX="172.0" layoutY="78.0" prefHeight="236.0" prefWidth="372.0">
+         <children>
+              <ImageView fx:id="view1" fitHeight="235.0" fitWidth="404.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../stayla/KrediKartıImage%20-%20Kopya.png" />
+                  </image>
+              </ImageView>
+            <Label fx:id="cardimage" layoutX="40.0" layoutY="126.0" prefHeight="35.0" prefWidth="308.0" style="-fx-background-color: #E8E8E8; -fx-border-color: #242A7E; -fx-border-width: 3;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="validimage" layoutX="177.0" layoutY="171.0" onKeyTyped="#handlecardnum" prefHeight="21.0" prefWidth="60.0" style="-fx-background-color: #E8E8E8; -fx-border-color: #242A7E; -fx-border-width: 3;" />
+         </children>
+      </Pane>
+      <Label layoutX="582.0" layoutY="341.0" text="Total Cost" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="672.0" layoutY="391.0" text="TL">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import org.controlsfx.control.*?>
+<?import org.controlsfx.control.textfield.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="mainpane" prefHeight="893.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddTrainController">
+   <children>
+      <JFXTextField fx:id="tf_idnumber" labelFloat="true" layoutX="111.0" layoutY="108.0" prefHeight="37.0" prefWidth="299.0" promptText="Id Number" unFocusColor="BLACK" AnchorPane.topAnchor="118.0" />
+      <JFXTextField fx:id="tf_cost" labelFloat="true" layoutX="115.0" layoutY="438.0" prefHeight="37.0" prefWidth="299.0" promptText="Cost" unFocusColor="BLACK" AnchorPane.topAnchor="438.0" />
+      <JFXComboBox fx:id="cb_arc" labelFloat="true" layoutX="111.0" layoutY="551.0" prefHeight="37.0" prefWidth="299.0" promptText="Arrival City" AnchorPane.topAnchor="598.0" />
+      <JFXComboBox fx:id="cb_mc" layoutX="111.0" layoutY="626.0" prefHeight="37.0" prefWidth="299.0" promptText="Intermediate City" AnchorPane.topAnchor="678.0" />
+      <JFXComboBox fx:id="cb_dpc" labelFloat="true" layoutX="111.0" layoutY="533.0" prefHeight="37.0" prefWidth="299.0" promptText="Departure City" AnchorPane.topAnchor="518.0" />
+      <Button layoutX="32.0" layoutY="822.0" mnemonicParsing="false" onAction="#handleReset" styleClass="pink-btn" stylesheets="@stylesheet.css" text="Clean" AnchorPane.leftAnchor="32.0" />
+      <Button layoutX="429.0" layoutY="822.0" mnemonicParsing="false" onAction="#handleAdd" styleClass="app-btn3" stylesheets="@stylesheet.css" text="Add" AnchorPane.rightAnchor="48.0" />
+      <Label fx:id="lbl_situtation" layoutX="155.0" layoutY="28.0" prefHeight="60.0" prefWidth="219.0" text="Add New Train" underline="true" wrapText="true">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datepicker" layoutX="111.0" layoutY="370.0" prefHeight="37.0" prefWidth="299.0" promptText="Date" />
+      <JFXComboBox fx:id="combodpt" layoutX="111.0" layoutY="201.0" prefHeight="37.0" prefWidth="299.0" promptText="Departure Time" />
+      <JFXComboBox fx:id="comboarrival" layoutX="111.0" layoutY="277.0" prefHeight="37.0" prefWidth="299.0" promptText="Arrival Time" />
+      <JFXComboBox fx:id="combointt" layoutX="111.0" layoutY="759.0" prefHeight="37.0" prefWidth="299.0" promptText="Intermediate Arrival Time" />
+   </children>
+</AnchorPane>

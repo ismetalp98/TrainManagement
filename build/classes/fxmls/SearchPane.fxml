@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="777.0" prefWidth="1250.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SearchPaneController">
+    <children>
+        <StackPane layoutY="57.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1250.0" style="-fx-background-color: #ffff;">
+            <children>
+                <AnchorPane prefHeight="720.0" prefWidth="1250.0" styleClass="linear11" stylesheets="@stylesheet.css">
+                    <children>
+                        <TableView fx:id="tableView" layoutX="4.0" layoutY="104.0" prefHeight="614.0" prefWidth="1244.0">
+                            <columns>
+                                <TableColumn fx:id="idnumcol" prefWidth="134.0" text="Id Number" />
+                                <TableColumn fx:id="dptcol" prefWidth="137.0" text="Departure Time" />
+                                <TableColumn fx:id="dpccol" prefWidth="146.0" text="Departure City" />
+                                <TableColumn fx:id="mccol" prefWidth="148.0" text="Middle City" />
+                                <TableColumn fx:id="mtcol" prefWidth="135.0" text="Middle Time" />
+                                <TableColumn fx:id="artcol" prefWidth="145.0" text="Arrival Time" />
+                                <TableColumn fx:id="arccol" prefWidth="132.0" text="Arrival City" />
+                                <TableColumn fx:id="datecol" prefWidth="134.0" text="Date" />
+                                <TableColumn fx:id="costcol" prefWidth="138.0" text="Cost" />
+                            </columns>
+                            <contextMenu>
+                                <ContextMenu>
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#handleAdd" text="Add" />
+                                        <MenuItem mnemonicParsing="false" onAction="#handleDelete" text="Delete" />
+                                        <MenuItem mnemonicParsing="false" onAction="#handleEdit" text="Edit" />
+                                        <MenuItem mnemonicParsing="false" onAction="#handleRefresh" text="Refresh" />
+                                    </items>
+                                </ContextMenu>
+                            </contextMenu>
+                        </TableView>
+                        <Button layoutX="25.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleClose" styleClass="app-btn" stylesheets="@stylesheet.css" text="  Back to HomePage" AnchorPane.leftAnchor="25.0">
+                            <graphic>
+                                <FontAwesomeIcon fill="WHITE" iconName="TIMES_CIRCLE" size="3EM" />
+                            </graphic>
+                        </Button>
+                        <Label layoutX="519.0" layoutY="27.0" text="Train List">
+                            <font>
+                                <Font size="41.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="1072.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleAdd" styleClass="pink-btn" stylesheets="@stylesheet.css" text="   Add Train" AnchorPane.rightAnchor="39.0">
+                            <graphic>
+                                <FontAwesomeIcon fill="WHITE" iconName="TRAIN" size="3EM" />
+                            </graphic>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </children>
+        </StackPane>
+      <Button layoutX="1123.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleminimize" prefHeight="33.0" prefWidth="34.0" styleClass="trans-btn-white-border-minimize" stylesheets="@stylesheet.css">
+         <graphic>
+            <FontAwesomeIcon fill="#ffffffad" iconName="MINUS_SQUARE" size="1.5em" />
+         </graphic>
+      </Button>
+      <Button fx:id="exit" layoutX="1186.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="33.0" prefWidth="34.0" styleClass="trans-btn-white-border" stylesheets="@stylesheet.css">
+         <graphic>
+            <FontAwesomeIcon fill="#ffffffad" iconName="TIMES_CIRCLE" size="1.5em" />
+         </graphic>
+      </Button>
+    </children>
+</AnchorPane>

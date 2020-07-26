@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="155.0" prefWidth="1106.0" style="-fx-background-color: #ffff; -fx-border-color: #000000; -fx-border-width: 0.1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="155.0" prefWidth="145.0">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../stayla/logo.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label fx:id="lbl_direct" alignment="CENTER" prefHeight="53.0" prefWidth="134.0" text="Label" textAlignment="CENTER" wrapText="true">
+               <VBox.margin>
+                  <Insets left="5.0" top="7.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label fx:id="dpt" minHeight="-Infinity" minWidth="-Infinity" prefWidth="150.0" text="Label">
+         <HBox.margin>
+            <Insets left="20.0" top="40.0" />
+         </HBox.margin>
+         <font>
+            <Font name="Bell MT" size="42.0" />
+         </font></Label>
+      <Label fx:id="lbl_idnumber" text="Label" visible="false" />
+      <Label fx:id="art" minHeight="-Infinity" minWidth="-Infinity" prefWidth="150.0" text="Label">
+         <font>
+            <Font name="Bell MT" size="42.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="30.0" top="40.0" />
+         </HBox.margin></Label>
+      <Label fx:id="date" minHeight="-Infinity" minWidth="-Infinity" prefWidth="215.0" text="Label">
+         <font>
+            <Font name="Bell MT" size="42.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="30.0" top="40.0" />
+         </HBox.margin></Label>
+      <Label fx:id="cost" minHeight="-Infinity" minWidth="-Infinity" prefWidth="150.0" text="Label">
+         <font>
+            <Font name="Bell MT" size="42.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="20.0" top="40.0" />
+         </HBox.margin></Label>
+      <Button fx:id="button" mnemonicParsing="false" onAction="#handlebutton" prefHeight="91.0" prefWidth="115.0" styleClass="pink-btn" stylesheets="@stylesheet.css" text="   Buy">
+         <HBox.margin>
+            <Insets left="20.0" top="30.0" />
+         </HBox.margin>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" iconName="CHECK_CIRCLE" size="2em" />
+         </graphic>
+      </Button>
+   </children>
+</HBox>
